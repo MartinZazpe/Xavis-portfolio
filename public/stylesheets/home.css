@@ -258,7 +258,8 @@ footer {
     }
 
     #right-container {
-        background: url('../images/background/bg-image.jpg');
+        /* background: url('../images/background/bg-image.jpg'); */
+        background: url("https://i.imgur.com/Qk8b755.jpg");
         background-size: cover;
         background-position: center;
         /* height: 100vh !important; */
