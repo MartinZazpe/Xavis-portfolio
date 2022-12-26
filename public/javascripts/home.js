@@ -33,6 +33,9 @@ window.addEventListener("load", function () {
         lateralNavbar.classList.toggle('active')
         if (lateralNavbar.classList.contains('active')) {
             lateralNavbar.classList.toggle('appearVisible')
+            bar1.classList.toggle('transformToX1')
+            bar2.classList.toggle('noDisplay')
+            bar3.classList.toggle('transformToX2')
             lateralMenuNavbar.classList.toggle('noDisplay')
             lateralMenuLinks.classList.toggle('noDisplay')
             lateralNavbar.style.display = "initial"
@@ -40,11 +43,13 @@ window.addEventListener("load", function () {
             footer.classList.toggle('footerTransition')
             socialLinks.classList.toggle('w50')
             socialLinks.style.display = "inherit"
+
+        } else {
+            lateralNavbar.style.display = "none"
+            hambMenu.style.display = "inherit"
             bar1.classList.toggle('transformToX1')
             bar2.classList.toggle('noDisplay')
             bar3.classList.toggle('transformToX2')
-        } else {
-            lateralNavbar.style.display = "none"
             headShotJump.classList.toggle('headShotJumpTransition')
             footer.classList.toggle('footerTransition')
             lateralNavbar.classList.toggle('appearVisible')
@@ -52,10 +57,7 @@ window.addEventListener("load", function () {
             lateralMenuLinks.classList.toggle('noDisplay')
             socialLinks.classList.toggle('w50')
             socialLinks.style.display = "none"
-            bar1.classList.toggle('transformToX1')
-            bar2.classList.toggle('noDisplay')
-            bar3.classList.toggle('transformToX2')
-            hambMenu.style.display = "inherit"
+
         }
     })
 
