@@ -9,7 +9,7 @@ var indexRouter = require('./api/mainRoutes')
 
 var app = express()
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3040
 
 app.listen(port, () => {
   console.log(`server is running in port ${port}`)
